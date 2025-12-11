@@ -1,0 +1,20 @@
+{
+  "name": "firstpro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pb:gen": "grpc_tools_node_protoc -I greet/ --js_out=import_style=commonjs:greet/ --grpc_out=grpc_js:greet/ greet/greet.proto"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.2",
+    "google-protobuf": "^4.0.1"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.13.1"
+  }
+}
